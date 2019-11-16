@@ -17,5 +17,5 @@ import requests
 import lxml.html
 import traceback
 import chardet
-from util.logging import logging
+from RepackHttp.util.logging import logging
 

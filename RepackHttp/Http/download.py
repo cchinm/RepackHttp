@@ -11,10 +11,10 @@
  * @Desc: 
 '''
 
-from Http import (requests,
+from RepackHttp.Http import (requests,
                   logging,
                   traceback)
-from Http.response import Response
+from RepackHttp.Http.response import Response
 
 
 class FetchRequest:

@@ -11,7 +11,7 @@
  * @Desc: 返回的response对象进行包装
 '''
 
-from Http import *
+from RepackHttp.Http import *
 
 class Response:
 
