@@ -34,6 +34,7 @@ class FetchRequest:
             )
             resp = Response(url=_resp.url,
                             request=request,
+                            response=_resp,
                             headers=_resp.headers,
                             **request.meta)
             if request.callback:

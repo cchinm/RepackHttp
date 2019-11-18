@@ -16,21 +16,27 @@ from RepackHttp.Http import *
 class Response:
 
 
-    def __init__(self, url, request, headers, **meta):
+    def __init__(self,
+                 url,
+                 request,
+                 headers,
+                 response,
+                 **meta):
 
         self.url = url
         self.__request = request
         self.headers = headers
         self.meta = meta
+        self.__response = response
 
 
     @property
     def text(self):
-        return self.__request.text
+        return self.__response.text
 
     @property
     def content(self):
-        return self.__request.content
+        return self.__response.content
 
     @property
     def status(self):
@@ -38,7 +44,14 @@ class Response:
         返回状态吗
         :return:
         """
-        return self.__request.status_code
+        return self.__response.status_code
+
+    def resp(self):
+        """
+        返回响应对象
+        :return:
+        """
+        return self.__response
 
     def req(self):
         """
@@ -52,7 +65,7 @@ class Response:
         json反序列化
         :return:
         """
-        return self.__request.json()
+        return self.__response.json()
 
 
     def html(self, encoding="utf8"):

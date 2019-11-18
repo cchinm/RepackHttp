@@ -19,7 +19,7 @@ class Request:
                  method,
                  url,
                  headers,
-                 data,
+                 data=None,
                  callback=None,
                  json=None,
                  **meta):
