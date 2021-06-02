@@ -24,7 +24,7 @@ install_packages = [
 'idna==2.8',
 'lxml==4.4.1',
 'requests==2.22.0',
-'urllib3==1.25.7',
+'urllib3==1.26.5',
 ]
 
 setuptools.setup(
