@@ -19,7 +19,7 @@ with open("README.md", "r", encoding="utf8", errors="ignore") as fh:
 
 
 install_packages = [
-'certifi==2019.9.11',
+'certifi==2022.12.7',
 'chardet==3.0.4',
 'idna==2.8',
 'lxml==4.4.1',
